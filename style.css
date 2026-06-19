@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1b2a;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.filter.active {
+    background: #4caf50;
+    color: white;
+}
+
+.board {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.column {
+    background: #1b263b;
+    width: 300px;
+    min-height: 500px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card-list {
+    min-height: 300px;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: grab;
+    outline: none;
+}
+
+.card.dragging {
+    opacity: 0.5;
+}
+
+.card.fade {
+    opacity: 0.3;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.done .card-title {
+    text-decoration: line-through;
+}
+
+.priority-P1 {
+    border-left: 6px solid red;
+}
+
+.priority-P2 {
+    border-left: 6px solid orange;
+}
+
+.priority-P3 {
+    border-left: 6px solid blue;
+}
+
+.priority-P4 {
+    border-left: 6px solid gray;
+}
+
+.add-card-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.add-form {
+    margin-top: 10px;
+}
+
+textarea,
+select {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.context-menu {
+    background: #333;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+.context-menu button {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
