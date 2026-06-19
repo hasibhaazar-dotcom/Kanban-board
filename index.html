@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban Board</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <input type="text" id="searchInput" placeholder="Search cards...">
+
+    <div class="filters">
+        <button class="filter active" data-priority="all">All</button>
+        <button class="filter" data-priority="P1">P1</button>
+        <button class="filter" data-priority="P2">P2</button>
+        <button class="filter" data-priority="P3">P3</button>
+        <button class="filter" data-priority="P4">P4</button>
+    </div>
+</header>
+
+<div id="board" class="board"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
